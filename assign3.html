@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function printmsg(){
+var a = parseInt(document.getElementById("num").value);
+for(var i=1; i<=a; i++){
+document.getElementById("showmsg").innerHTML=document.getElementById("showmsg").innerHTML+document.getElementById("msg").value + "<br>";
+}
+}
+</script>
+</head>
+<body>
+<fieldset>
+<h2>Print the message as many times the number is.</h2>
+<label for="num1">Number</label>
+<input type="number" name="number" id="num"><br>
+<textarea type="text" cols="25" rows="5" id="msg"></textarea>
+<button type="submit" onclick="printmsg()">See result</button><br>
+<div id="showmsg">
+</fieldset>
+</div> 
+</body>
+</html>

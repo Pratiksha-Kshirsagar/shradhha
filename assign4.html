@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function numfun(){
+            var num1=parseInt(document.getElementById("1").value);
+            var count=1;
+            while(count <=num1){
+                document.getElementById("result").innerHTML +=count+ " ";
+                count ++;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2 style="background-color: antiquewhite;">To list all even no less than or equal to num</h2>
+    <label style="background-color: aquamarine;" for="1" >Enter a no</label><br>
+    <input type="number" name="num" id="1" >
+    <button type="submit" onclick="numfun()">see result</button>
+    <p id="result"></p>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function function1(){
+            document.getElementById("menu").innerHTML="button is clicked";
+        }
+    </script>
+    <script>
+        function sum(){
+            let num1 = parseInt(document.getElementById("num1").value);
+            let num2 = parseInt(document.getElementById("num2").value);
+            let result = num1+num2;
+            document.getElementById("result").value=`${result}`;
+        }
+    </script>
+</head>
+<body>
+   <!--  <input type="number"  name="num1" id="num1" placeholder="Enter value">
+    +
+    <input type="number"  name="num2" id="num2" placeholder="Enter value"><br>
+    <button type="button" onclick="sum()">
+        Calculate Sum
+    </button>
+    <input type="text" id="result" readonly> -->
+ 
+<table style="background-color: rgb(60, 115, 90);">
+    <form action="">
+        <tr>
+            <td colspan="2"><input type="number" name="num1" id="num1" readonly style="width: 300px;"></td>
+            <td colspan="2"><input type="number" name="num2" id="num2" readonly style="width: 300px;"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="number" name="result" id="res" readonly style="width: 610px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="reset" style="width: 310px;">Reset</button></td>
+            <td><button type="button" style="width: 150px;">/</button></td>
+            <td><button type="button" style="width: 150px;">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" style="width: 150px;">9</button></td>
+            <td><button type="button" style="width: 150px;">8</button></td>
+            <td><button type="button" style="width: 150px;">7</button></td>
+            <td><button type="button" style="width: 150px;">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" style="width: 150px;">6</button></td>
+            <td><button type="button" style="width: 150px;">5</button></td>
+            <td><button type="button" style="width: 150px;">4</button></td>
+            <td><button type="button" style="width: 150px;">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" style="width: 150px;">3</button></td>
+            <td><button type="button" style="width: 150px;">2</button></td>
+            <td><button type="button" style="width: 150px;">1</button></td>
+            <td><button type="submit" style="width: 150px;">=</button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="button" style="width: 150px;">0</button></td>
+            <td></td>
+            <td></td>
+        </tr>
+ 
+    </form>
+</table>
+ 
+</body>
+</html>
+

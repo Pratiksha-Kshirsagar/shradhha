@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function myfuc(){
+       var x= document.getElementById("1");
+       if(x.type==="password"){
+        x.type="text";
+       }
+       else{
+        x.type="password"
+       }
+    }
+</script>
+</head>
+<body>
+   <fieldset>
+    <legend style="background-color: aquamarine ;color: black;font-size: larger;">Name and address</legend>
+<table style="color: blueviolet;">
+    <tr>
+        <td align="right" style="font-size: large;">SSN</td>
+        <td><input type="text" style="background-color: black;border-radius: 5px;"></td>
+        <td><div>fill name and address</div></td>
+    </tr>
+    <tr>
+        <td align="right " style="font-size: larger;">street and number</td>
+        <td><input type="text " style="background-color: black;border-radius: 10px;"></td>
+    </tr>
+</table>   
+</fieldset> 
+<fieldset>
+<legend style="background-color: aquamarine;color: black; font-size: larger;">username and password</legend>
+
+    <table style="color: blueviolet;">
+        <tr><td align="right">Username</td>
+        <td><input type="text" style="background-color: black;"></td>
+
+    </tr>
+    <tr>
+        <td align="right"> Password</td>
+        <td><input type="password" value="pwd" id="1" style="font-size: larger;background-color: rgb(165, 177, 167);"></td>
+    </tr>
+    <tr><td></td>
+    <td><input type="checkbox" onclick="myfuc()">show password</td>
+</tr>
+    </table>
+</fieldset>
+</body>
+</html>

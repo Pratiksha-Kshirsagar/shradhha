@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+function findlargest(){
+    a=parsedouble(document.getElementById("num1").value);
+    b=parsedouble(document.getElementById("num2").value);
+    c=parsedouble(document.getElementById("num3").value);
+   console.log("pratiksha");
+    if (a > b && a >c){
+        document.getElementById("largestno").innerHTML=a;
+    }
+    else if  (b>a && b>c){
+        document.getElementById("largestno").innerHTML=b;
+    }
+    else {
+        document.getElementById("largestno").innerHTML=c;
+    }
+}
+</script>
+</head>
+<style>
+    body{
+        border: 2px;background-color: darkcyan; font-style: italic; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20%; padding-top: 10%;border-radius: 30%;}
+
+</style>
+<body style="color: rgb(40, 7, 62);font-size: large;animation-fill-mode: backwards;">
+    <h2>find largest no</h2>
+    <label for="num1">number1</label>
+    <input type="text" name="num1" id="num1" placeholder="enter 1st no"><br><br>
+    <label for="num2">number2</label>
+    <input type="text" name="num2" id="num2"><br><br>
+    <label for="num3">number3</label>
+    <input type="text" name="num3" id="num3"><br><br>
+    <button type="submit" onclick="findlargest()">result</button>
+    <br>
+    <textarea name="res" id="largestno" cols="20" rows="10"></textarea><br>
+    <button type="submit" onmousemove="src.a"> submit</button>
+</body>
+</html>
